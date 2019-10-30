@@ -4,6 +4,7 @@ let hater = {
 
     NameHaters() {
       return `${this.firstName} ${this.surName}`;
+
       }
 }
 console.log(hater.NameHaters());
