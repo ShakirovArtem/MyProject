@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cal Ipo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .my-container {
+            margin-top: 25px;
+        }
+
+        .my-card-header {
+            text-align: center;
+        }
+
+        .my-result {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container my-container">
+        <div class="card">
+            <div class="card-header my-card-header">
+                <h5 class="card-title">Калькулятор ипотечного кредитования</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Проект подготовлен в рамках интенсива <a
+                        href="https://vk.com/webcademy" target="_blank">WebCademy</a></h6>
+            </div>
+
+            <!-- Стоимость недвижимости -->
+            <div class="card-body">
+                <label for="creditNumber">Стоимость недвижимости:</label>
+                <input type="text" id="creditNumber" class="form-control" aria-describedby="creditNumberHandler"
+                    value="10 000 000 Р">
+                <input type="range" class="form-control-range" id="creditNumberInput" min="0" max="15000000">
+                <small id="creditNumberHandler" class="form-text text-muted">Сумма, которую за вас заплатит
+                    банк.</small>
+            </div>
+            <!-- / Стоимость недвижимости -->
+
+            <!-- Первоначальный взнос -->
+            <div class="card-body">
+                <label for="firstContributionNumber">Первоначальный взнос:</label>
+                <input type="text" id="firstContributionNumber" class="form-control"
+                    aria-describedby="firstContributionNumberHandler" value="2 500 000 Р">
+                <input type="range" class="form-control-range" id="firstContributionNumberInput" min="0" max="15000000">
+                <small id="firstContributionNumberHandler" class="form-text text-muted">Ваш первичный взнос в качестве
+                    погашения кредита (обычно сразу после сделки)</small>
+            </div>
+            <!-- / Первоначальный взнос -->
+
+            <!-- Срок кредита -->
+            <div class="card-body">
+                <label for="returnPeriodNumber">Срок кредита:</label>
+                <input type="text" id="returnPeriodNumber" class="form-control"
+                    aria-describedby="returnPeriodNumberHandler" value="10 лет">
+                <input type="range" class="form-control-range" id="returnPeriodNumberInput" min="0" max="15000000">
+                <small id="returnPeriodNumberHandler" class="form-text text-muted">Как долго в годах планируете
+                    возвращать долг.</small>
+            </div>
+            <!-- / Срок кредита -->
+
+            <!-- Процентная ставка -->
+            <div class="card-body">
+                <label for="percentNumber">Процентная ставка:</label>
+                <input type="text" id="returnPeriodNumber" class="form-control"
+                    aria-describedby="percentNumberHandler" value="6.3 %" disabled>
+                <small id="percentNumberHandler" class="form-text text-muted">На такую сумму будет возростать долг каждый месяц (перед выплатой).</small>
+            </div>
+            <!-- / Процентная ставка -->
+
+            <hr>
+            <div class="card-footer">
+                <p class="my-result"><strong>Итого:</strong> <span id="payment">34 000</span> рублей в месяц</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
