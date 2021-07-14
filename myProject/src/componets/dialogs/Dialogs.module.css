@@ -1,0 +1,20 @@
+.dialogs{
+display: grid;
+grid-template-columns: 20fr 30fr;
+padding: 20px;
+color: red;
+}
+.dialogItems a{
+text-decoration: none;
+}
+.item a{
+ color: green;
+}
+
+.messages{
+ color: hotpink;
+}
+
+.message {
+ color: blue;
+}
