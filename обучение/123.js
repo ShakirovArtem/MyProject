@@ -1,9 +1,9 @@
 let hater = {
   firstName: 'bill',
   surName: "dak",
-
-    NameHaters() {
-      return `${this.firstName} ${this.surName}`;
+  NameHaters() {
+    this
+    return `${this.firstName} ${this.surName} ` 
 
     }
 
