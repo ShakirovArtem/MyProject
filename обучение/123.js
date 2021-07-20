@@ -2,7 +2,7 @@ let hater = {
   firstName: 'bill',
   surName: "dak",
   NameHaters() {
-    this
+    thiseqeqw
     return `${this.firstName} ${this.surName} ` 
 
     }
